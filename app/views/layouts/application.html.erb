@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Privacy</title>
+  <title>Privacy Checker</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
-
-<%= yield %>
-
+  <div class="container about">
+    <h1><a href="<%index_path%>">Privacy Checker</a></h1>
+    <h4>In recent days, it has come to be known that the government has been gather large amount of data on the private interactions of its citizens. This app utilizes top of the line technologies to determine if the government has mined data on you!</h4>
+  <div class="container main-container">
+    <%= yield %>
+  </div>
+  <div class="footer">
+    <footer>
+      <p class="text-left footer-text">Conner Smith</p>
+    </footer>
+  </div>
 </body>
 </html>

@@ -1,0 +1,8 @@
+<%= form_tag index_path, :method => 'get' do %>
+  <div>
+    <%= text_field_tag :Name, nil, {placeholder: "Enter Your Name", class: "name" } %>
+  </div>
+  <div>
+  <%= submit_tag "Has Obama Targeted Me?", :class => "btn btn-success " %>
+  </div>
+<% end %>

@@ -1,0 +1,20 @@
+<div class="container inner">
+  <p class="title-text">Has Obama Targeted Me?</p>
+    <% if session[:name].present? %>
+      <p class="notice">YES!</p>
+    <% end %>
+  <% if session[:name] == 1 %>  
+    <div class="img-container">
+      <img src="name/<%=@random_image%>" alt="img"></img>
+    </div>
+  <% else %>
+    <div class="img-container">
+      <%= image_tag("obama3.jpg", :alt => "no-name-img") %>
+    </div>
+  <%end%>
+  <div>
+    <a href="<%= index_path%>" class="btn btn-warning">
+      Try Another Name
+    </a>
+  </div>
+</div>

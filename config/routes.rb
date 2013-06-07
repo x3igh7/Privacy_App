@@ -1,4 +1,6 @@
 Privacy::Application.routes.draw do
+  get "/index" => "home#index"
+  get "/results" => "home#results"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
