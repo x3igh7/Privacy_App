@@ -19,11 +19,8 @@ class HomeController < ApplicationController
   def results
     @image_files = %w( .jpg .gif .png )
     @images  = Dir.entries("public/name").delete_if { |x| !@image_files.index(x[-4,4]) }
-
-    
     random_no = rand(@images.length)
     @random_image = @images[random_no]
-
   end
 
 end
